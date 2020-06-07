@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact us form validation Using Javascript</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="fraim" align="center">
+		<iframe height="450" width="950" src="cv.pdf#toolbar=0"  frameborder="1" > </iframe>
+	</div>								
+	
+	<div class="wrapper">
+		<h2>Contact Me</h2>
+			<div id="error_message"></div>
+		<form id="myform" action="https://formspree.io/xdowgvar" method="POST"  enctype="multipart/form-data" onsubmit="return validate();">
+			<div class="input_field">
+				<input type="text" placeholder="Name" id="name" required>
+			</div>
+	
+			<div class="input_field">
+				<input type="text" placeholder="Subject" id="subject" required>
+			</div>
+		
+			<div class="input_field">
+				<input type="text" placeholder="Email" id="email" name="_replyto" required>
+			</div>
+    
+			<div class="input_field">
+				<textarea placeholder="Message" id="message" name="message" required></textarea>
+			</div>
+		
+			<div class="btn">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+	
+	<script src="javascript.js"></script>
+	
+	<!--
+	<footer>
+		<p> © 2020 Ιάκωβος Δαμίγος , </p>
+		<br>
+		<p> Please check out my Instagram page <a href="https://www.instagram.com/_.amor_et_libertas._/">_.amor_et_libertas._ </a>!!! </p>
+		<br>
+		<p>For more information check the <a href="https://formspree.io/legal/terms-of-service">Terms of Use</a>, and <a href="https://formspree.io/legal/privacy-policy">Privacy Policy</a>.<p>
+	</footer>
+	-->
+</body>
+</html>
