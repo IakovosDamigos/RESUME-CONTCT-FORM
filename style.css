@@ -11,13 +11,13 @@
 body{
   background-color: black;
 }
-/*
+
 footer{
   text-align: center;
   background-color: #404040;
   color: white;
 }
-*/
+
 .frame{
   position: absolute;
   top: 10px;
@@ -27,16 +27,17 @@ footer{
 }
 
 .wrapper{
-  position: absolute;
-  top: 700px;
+  position: relative;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,0%);
   max-width: 350px;
   width: 100%;
   background: #fff;
   padding: 25px;
   border-radius: 5px;
   box-shadow: 4px 4px 2px rgba(179, 128, 255, 1); 
+  padding: 25px;
+  margin: 10px;
 }
 
 .wrapper h2{
